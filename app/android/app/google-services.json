@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "551497197725",
+    "project_id": "merchantplutope",
+    "storage_bucket": "merchantplutope.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:551497197725:android:813f5fced470ac3e41cc74",
+        "android_client_info": {
+          "package_name": "com.merchant_plutope"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBexXRx6wPIA3bn_UyCyyanR4fsMsF_nig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

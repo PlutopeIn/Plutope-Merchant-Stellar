@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2B5AF3">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="235dp"
+        android:layout_height="100dp"
+        android:src="@drawable/plutope"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+    />
+    <TextView
+        android:id="@+id/belowImageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Merchant"
+        android:textSize="24sp"
+        android:lineHeight="32dp"
+        android:textFontWeight="400"
+        android:textColor="@color/onfido_white"
+        android:layout_below="@id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Powered by"
+        android:layout_marginBottom="50dp"
+        android:layout_centerInParent="true"
+        android:textSize="10sp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/onfido_white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="Stellar"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/onfido_white"
+        android:textSize="30sp" />
+</RelativeLayout>
