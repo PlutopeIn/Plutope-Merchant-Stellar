@@ -1,0 +1,92 @@
+/* start add user page */
+
+.admin-add-user-containt .admin-add-basic-text {
+      color: var(--primary-color);
+      font-weight: 600;
+      margin: 0px 0px 4px;
+}
+
+.admin-add-user-containt .admin-add-section-text {
+      color: var(--secondary-color);
+      margin-bottom: 20px;
+}
+
+
+.admin-add-user-input .admin-form-control-textarea {
+      width: 100%;
+      border: 1px solid #D1D5DB;
+      border-radius: 4px;
+      padding: 10px;
+      min-height: 100px;
+      resize: none;
+}
+
+.admin-radio-main .admin-radiogroup .MuiButtonBase-root.Mui-checked {
+      color: var(--selected-color);
+}
+
+.admin-radio-main .MuiFormControlLabel-label {
+      color: var(--secondary-color);
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 400;
+}
+
+.admin-user-btn-flex {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 40px;
+}
+
+/* end add user page */
+
+
+
+
+/* start admin add user page */
+
+
+.admin-discard-btn-main .admin-discard-user-btn {
+      margin-right: 10px;
+}
+
+.admin-user-save-icon {
+      margin-right: 8px;
+      object-fit: contain;
+}
+
+.admin-tabs-main .admin-tab {
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 500;
+      color: var(--primary-color);
+      text-transform: capitalize;
+      padding: 10px 15px;
+}
+
+.admin-tabs-main .admin-tab.Mui-selected {
+      color: var(--selected-color);
+}
+
+.admin-tabs-main .MuiTabs-indicator {
+      background-color: var(--selected-color);
+      height: 2px;
+}
+
+.admin-tabpanel .admin-edit-highlight-text {
+      color: var(--primary-color);
+      font-weight: 500;
+      margin-bottom: 4px;
+}
+
+.admin-tabpanel .admin-edit-para-text {
+      margin-bottom: 24px;
+      color: var(--secondary-color);
+}
+
+.admin-tabpanel>.MuiBox-root {
+      padding: 24px 0px;
+}
+
+/* end admin add user page */

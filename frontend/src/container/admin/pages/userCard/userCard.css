@@ -1,0 +1,98 @@
+.admin-card-box {
+      position: relative;
+}
+
+.admin-user-card-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+}
+
+.admin-card-img-main {
+      display: flex;
+}
+
+.admin-card-img {
+      width: 90px;
+      height: 90px;
+      border-radius: 10px;
+      object-fit: cover;
+}
+
+.admin-card-data-flex {
+      display: flex;
+      margin: 5px 0px;
+}
+
+.admin-card-data-flex .admin-card-user-lable {
+      font-size: 12px;
+      line-height: 18px;
+      color: var(--primary-color);
+      font-weight: 500;
+      max-width: 200px;
+      margin-right: 10px;
+}
+
+.admin-card-data-flex .admin-card-user-data {
+      font-size: 12px;
+      line-height: 18px;
+      color: var(--secondary-color);
+      font-weight: 400;
+}
+
+.admin-admin-user-list-row {
+      margin: 30px 0px;
+}
+
+.admin-card-box .admin-card-user-title {
+      color: var(--selected-color);
+      font-size: 15px;
+      line-height: 20px;
+      font-weight: 500;
+      margin: 0px 0px 5px;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+      overflow: hidden;
+}
+
+.admin-user-card-flex {
+      display: flex;
+      align-items: center;
+}
+
+.admin-card-containt-main {
+      margin-left: 20px;
+}
+
+.admin-user-list-row {
+      margin-bottom: 50px;
+}
+
+.admin-card-data-flex:last-child {
+      margin-bottom: 0px;
+}
+
+.admin-card-delete-icon {
+      height: 15px;
+      width: 15px;
+      object-fit: contain;
+}
+
+.admin-card-delete-box {
+      background-color: var(--selected-color);
+      height: 25px;
+      width: 25px;
+      border-radius: 0px 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      cursor: pointer;
+}
+
+.admin-card-pagination-main {
+      margin-right: 0px;
+}

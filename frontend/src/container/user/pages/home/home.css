@@ -1,0 +1,25 @@
+
+
+.home-hero-main{
+      /* background-image: url(../../../../assets/images/png/bg-6.jpg); */
+      background: linear-gradient(45deg, rgba(9, 0, 20, .80), rgba(10, 6, 25, .80)) ,  url(../../../../assets/images/png/bg-6.jpg);
+      height: 100vh;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-top: -100px;
+}
+.hero-content-main{
+      padding-top: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+}
+.back-text{
+      font-size: 150px;
+      line-height: 160px;
+      color: #fff;
+      opacity: 0.1;
+      text-align: center;
+}

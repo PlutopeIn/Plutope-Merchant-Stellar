@@ -1,0 +1,271 @@
+/* start header css */
+
+.header-main {
+      /* background: transparent linear-gradient(180deg, #412B97 0%, #06001E 100%); */
+      padding: 20px 0px;
+      background-color: transparent;
+}
+
+.header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.header-logo-box .header-logo {
+      /* height: 58px; */
+      max-width: 158px;
+      object-fit: contain;
+      width: 100%;
+}
+
+.header-nav-main .header-nav-ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style-type: none;
+      padding: 0px;
+      margin: 0px;
+      float: left;
+      left: 50%;
+      position: relative;
+}
+
+.header-nav-main .header-nav-li {
+      padding: 0px;
+      margin-right: 49px;
+      max-width: max-content;
+      margin: 0 30px;
+      float: left;
+      left: -50%;
+      position: relative;
+}
+
+.header-nav-main .header-nav-li:last-child {
+      margin-right: 0px;
+}
+
+.header-nav-main .header-nav-link:before,
+.header-nav-main .header-nav-link:after {
+      content: "";
+      height: 1px;
+      width: 0;
+      opacity: 0;
+      background-color: #fff;
+      position: absolute;
+      transition: all .5s;     
+}
+
+.header-nav-main .header-nav-link:before {
+      top: -3px;
+}
+
+.header-nav-main .header-nav-link:after {
+      bottom: -3px;
+      right: 0;
+}
+
+.header-nav-main .header-nav-link:hover:before,
+.header-nav-main .header-nav-link:hover:after {
+      width: calc(100% + 20px);
+      opacity: 0.7;
+}
+
+
+.header-nav-main .header-nav-link {
+      color: var(--main-white);
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 600;
+      text-decoration: none;
+}
+
+.header-nav-main .header-nav-link:hover {
+      color: var(--main-white);
+}
+
+.header-right-main {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+}
+
+.header-user-icon {
+      height: 24px;
+      width: 24px;
+      object-fit: contain;
+      margin-right: 6px;
+}
+
+.header-right-main .header-login-link {
+      color: var(--main-white);
+      font-size: 14px;
+      line-height: 18px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+}
+
+.header-search-icon {
+      width: 15.488px;
+      height: 15.488px;
+      object-fit: contain;
+}
+
+.header-right-main .mobile-menu-btn {
+      display: none;
+}
+
+/* end header css */
+
+
+/* start footer css */
+.footer {
+      background: transparent linear-gradient(180deg, #412B97 0%, #06001E 100%);
+      padding: 50px 0px 0px 0px;
+}
+
+.footer-row {
+      padding: 0px 0px 70px 0px;
+}
+
+.footer-logo-box .footer-logo {
+      max-width: 152px;
+      width: 100%;
+      object-fit: contain;
+      height: 58px;
+      margin-bottom: 30px;
+}
+
+.footer-nav-main .footer-nav-titles {
+      color: var(--main-white);
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 600;
+      margin: 0px 0px 12px 0px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+}
+
+.footer-col .footer-para {
+      color: var(--main-white);
+      font-size: 16px;
+      line-height: 25px;
+      font-weight: 400;
+      max-width: 278px;
+      width: 100%;
+      margin: 0px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+}
+
+.footer-nav-main .footer-nav-ul {
+      list-style-type: none;
+      padding: 0px;
+      margin: 0px;
+}
+
+.footer-nav-main .footer-nav-li {
+      padding: 0px;
+      margin-bottom: 6px;
+}
+
+.footer-nav-main .footer-nav-li:last-child {
+      margin-bottom: 6px;
+}
+
+.footer-nav-main .footer-nav-link {
+      font-size: 14px;
+      line-height: 21px;
+      color: var(--main-white);
+      text-decoration: none;
+      font-weight: 400;
+}
+
+.footer-copy-right-box {
+      border-top: 1px solid var(--main-border);
+      padding: 30px 0px;
+}
+
+.footer-copy-right-box .footer-copy-right-text {
+      color: var(--main-white);
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 400;
+      text-align: center;
+      margin: 0px;
+}
+
+/* end footer css */
+.user-border-btn-main .user-border-btn {
+      background-color: #2e2e2e54;
+      /* border: 1px solid var(--main-white); */
+      border-radius: 4px;
+      padding: 10px 10px;
+      min-width: 120px;
+      font-size: 17px;
+      line-height: 23px;
+      color: var(--main-white);
+      font-weight: 400;
+      text-transform: capitalize;
+}
+
+.user-border-btn::before,
+.user-border-btn::after {
+      content: "";
+      width: 0;
+      height: 2px;
+      position: absolute;
+      transition: all 0.2s linear;
+      background: #fff;
+}
+
+span::before,
+span::after {
+      content: "";
+      width: 2px;
+      height: 0;
+      position: absolute;
+      transition: all 0.2s linear;
+      background: #fff;
+}
+
+.user-border-btn:hover::before,
+.user-border-btn:hover::after {
+      width: 100%;
+}
+
+.user-border-btn:hover span::before,
+.user-border-btn:hover span::after {
+      height: 100%;
+}
+
+.user-border-btn::after {
+      left: 0;
+      bottom: 0;
+      transition-duration: 0.4s;
+}
+
+.user-border-btn span::after {
+      right: 0;
+      top: 0;
+      transition-duration: 0.4s;
+}
+
+.user-border-btn::before {
+      right: 0;
+      top: 0;
+      transition-duration: 0.4s;
+}
+
+.user-border-btn span::before {
+      left: 0;
+      bottom: 0;
+      transition-duration: 0.4s;
+}

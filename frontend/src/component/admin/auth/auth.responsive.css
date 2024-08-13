@@ -1,0 +1,36 @@
+@media (max-width: 1249px) {}
+
+@media (max-width: 1023px) {
+      .admin-auth-left-main {
+            display: none;
+      }
+
+      .admin-auth-right-main {
+            width: 100%;
+            max-width: 100%;
+            flex: 0 0 100%;
+      }
+
+      .login-auth-bg {
+            height: 50vh;
+            background-size: cover;
+      }
+}
+
+@media (max-width: 767px) {
+      .login-otp input {
+            width: 4em !important;
+            height: 3.5em;
+            margin-right: 4px;
+      }
+
+}
+
+@media (max-width: 549px) {
+      .user-auth-card-main {
+            max-width: 100% !important;
+            min-width: 100% !important;
+      }
+}
+
+@media (max-width: 374px) {}

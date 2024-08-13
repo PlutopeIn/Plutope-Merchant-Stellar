@@ -1,0 +1,336 @@
+/* start admin sidebar css */
+.admin-sidebar-logo-main .sidebar-close-btn {
+      display: none;
+}
+
+.admin-header-deactive .admin-header-logo-main {
+      flex-direction: row-reverse;
+}
+
+.admin-sidebar-icons {
+      margin-right: 8px;
+      height: 20px;
+      width: 20px;
+      object-fit: contain;
+}
+
+.admin-sidebar-logo {
+      width: 100px;
+      object-fit: contain;
+      cursor: pointer;
+}
+
+.admin-close-icon {
+      display: none;
+}
+
+.admin-sidebar-logo-main {
+      padding: 5px 10px;
+      min-height: 64px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.admin-sidebar-list-main {
+      padding: 16px 10px;
+      overflow-y: auto;
+      height: calc(100vh - 65px);
+}
+
+.admin-header-drop-main .admin-drop-header-btn {
+      padding: 0px;
+}
+
+.admin-sidebar-list-main .admin-sidebar-list {
+      padding: 0px;
+}
+
+.admin-sidebar-list-main .admin-sidebar-listitem {
+      padding: 0px;
+}
+.admin-sidebar-deactive .admin-sidebar-list-main .admin-sidebar-listitem{
+      justify-content: center;
+}
+.admin-sidebar-list-main .admin-sidebar-link {
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 400;
+      color: #FFFFFF;
+      display: flex;
+      padding: 6px 6px 6px 6px;
+      margin-bottom: 3px;
+      width: 100%;
+      text-decoration: none;
+      transition: 0.5s all;
+      align-items: center;
+}
+
+.admin-sidebar-list-main .admin-sidebar-link.active {
+      color: #FFFFFF;
+      background-color: var(--selected-color);
+      border-radius: 4px;
+}
+
+/* .admin-submenu-link-box {
+      width: 100%;
+} */
+
+.admin-sidebar-listitem .expandless-icon,
+.admin-sidebar-listitem .expandmore-icon {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      color: #fff;
+}
+
+.admin-submenu-main {
+      margin-left: 20px;
+}
+
+.admin-sidebar-deactive .admin-submenu-main {
+      margin-left: 0px;
+}
+
+.admin-sidebar-logo-main .admin-sidebar-close-btn {
+      display: none;
+      min-width: 30px;
+}
+
+.scrollbar::-webkit-scrollbar {
+      width: 2px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+      background: #f1f1f1;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+      background: #888;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #555;
+}
+
+/* end admin sidebar css */
+
+
+
+
+
+
+/* start admin header css */
+
+
+.admin-header-main {
+      background-color: #FFFFFF;
+      position: fixed;
+      top: 0px;
+      left: 250px;
+      right: 0px;
+      z-index: 9;
+      padding: 15px 20px 13px 20px;
+      border-bottom: 1px solid #E5E7EB;
+      transition: 0.5s all;
+}
+
+/* .admin-header-deactive {
+      left: 0px;
+} */
+
+.admin-header-main.active .admin-sidebar-logo {
+      opacity: 0;
+      display: none;
+}
+
+.admin-header-logo-main .admin-bergur-button {
+      padding: 0px;
+      min-width: 30px;
+}
+
+.admin-header-main.admin-header-deactive .admin-sidebar-logo {
+      opacity: 1;
+      transition: 0.5s all;
+      margin-left: 10px;
+      height: 35px;
+      display: none;
+}
+
+.admin-header-logo-main {
+      display: flex;
+}
+
+.admin-header-left {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.admin-header-right {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 10px;
+}
+
+.admin-header-right .admin-header-icon-box {
+      padding: 0px;
+      min-width: 30px;
+}
+
+
+.admin-header-icon {
+      height: 20px;
+      width: 20px;
+      object-fit: contain;
+}
+
+.admin-header-profile-icon {
+      height: 36px;
+      width: 36px;
+      object-fit: cover;
+}
+
+/* end admin header css */
+
+
+
+
+
+/* start header profile dropdown  */
+
+.admin-flex-drop-main .admin-header-drop {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      color: var(--secondary-color);
+      text-align: start;
+      margin-left: 12px;
+      text-transform: capitalize;
+}
+
+.admin-flex-drop-main .admin-header-drop-title {
+      font-family: 'Poppins-Bold';
+}
+
+.admin-flex-drop-main {
+      display: flex;
+      align-items: center;
+}
+
+.admin-drop-header {
+      height: 15px;
+      width: 15px;
+      margin-right: 6px;
+}
+
+.admin-drop-header-menu .MuiPaper-rounded {
+      box-shadow: 10px 10px 20px #0000001A;
+      border: 1px solid #E5E7EB;
+      margin-top: 13px;
+      border-radius: 1px;
+}
+
+.admin-drop-header-icon {
+      margin-right: 10px;
+}
+
+.admin-drop-header-menu .admin-drop-header-menuitem {
+      font-size: 12px;
+      line-height: 14px;
+      color: var(--secondary-color);
+      font-weight: 400;
+      border-bottom: 1px solid #E5E7EB;
+      padding: 11px 16px;
+}
+
+.admin-drop-header-menu ul {
+      padding: 0px;
+}
+
+/* end header profile dropdown  */
+
+
+/* start auth footer social meadia */
+
+.social-main .social-ul {
+      padding: 0px;
+      list-style-type: none;
+      margin: 20px 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.social-main .social-ul .social-li {
+      padding: 0px;
+      margin: 0 10px 0 0;
+      width: max-content;
+}
+
+.social-main .social-ul .social-li:last-child {
+      margin: 0 0px 0 0;
+}
+
+.social-box {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      border: 1px solid #D1D5DB;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.social-icons {
+      height: 15px;
+      width: 15px;
+      object-fit: contain;
+}
+
+
+
+/* end auth footer social meadia */
+
+
+
+
+/* start sidebar with icons */
+
+.admin-dashboard-left-main.admin-sidebar-deactive {
+      left: 0px;
+      max-width: 90px;
+}
+
+.admin-sidebar-deactive .admin-sidebar-logo {
+      width: 50px;
+}
+
+.admin-header-main.admin-header-deactive {
+      left: 90px;
+}
+
+.admin-header-main.admin-header-deactive+.admin-dashboard-containt-main {
+      padding: 88px 24px 24px 100px;
+}
+
+.admin-sidebar-deactive .admin-sidebar-link-text {
+      display: none;
+}
+
+.admin-sidebar-deactive .admin-sidebar-submenulist .admin-sidebar-link {
+      margin-left: 0px;
+}
+
+.admin-sidebar-deactive .admin-sidebar-icons {
+      margin-right: 0px;
+}
+
+.admin-sidebar-deactive .admin-sidebar-list-main .admin-sidebar-link {
+      width: initial;
+      padding: 6px 6px 6px 6px;
+}
+
+/* end sidebar with icons */
+

@@ -1,0 +1,38 @@
+/* start admin dashboard page structure css */
+
+.admin-dashboard-left-main {
+      max-width: 250px;
+      width: 100%;
+      background-color: var(--bg-color);
+      height: 100vh;
+      left: 0;
+      position: fixed;
+      top: 0;
+      z-index: 999;
+      border-right: 1px solid var(--main-border);
+      transition: 0.5s all;
+
+}
+
+/* .admin-header-main.admin-header-deactive+.admin-dashboard-containt-main {
+      padding: 88px 24px 24px 24px;
+} */
+
+/* .admin-dashboard-left-main.admin-sidebar-deactive {
+      left: -290px;
+} */
+
+.admin-dashboard-containt-main {
+      background-color: var(--body-color);
+      min-height: 100vh;
+      padding: 88px 24px 24px 270px;
+      transition: 0.5s all;
+}
+
+.admin-dashboard-main {
+      width: 100%;
+}
+
+
+/* end admin dashboard page structure css */
+

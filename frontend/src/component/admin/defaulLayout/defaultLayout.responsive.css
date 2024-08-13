@@ -1,0 +1,56 @@
+@media (max-width: 1249px) {}
+
+@media (max-width: 1023px) {
+
+
+      .admin-sidebar-logo-main {
+            justify-content: space-between;
+      }
+
+      .admin-header-main.admin-header-deactive .admin-sidebar-logo {
+            display: block;
+            margin-left: 0px;
+      }
+
+      .admin-header-right .admin-header-icon-box {
+            margin-right: 5px;
+      }
+
+}
+
+@media (max-width: 767px) {
+      .admin-close-icon {
+            height: 23px;
+            width: 23px;
+            object-fit: contain;
+            display: block;
+      }
+
+      .admin-sidebar-logo-main .admin-sidebar-close-btn {
+            display: block;
+      }
+      .admin-bergurmenu-icon {
+            height: 20px;
+            object-fit: contain;
+            width: 20px;
+      }
+
+      .admin-header-icon-box {
+            margin-right: 15px;
+      }
+
+      .admin-header-row .admin-bergur-button {
+            padding: 0px;
+            min-width: 37px;
+      }
+
+      .admin-header-sidebar-logo {
+            order: 2;
+      }
+
+
+}
+
+@media (max-width: 549px) {}
+
+@media (max-width: 374px) {}

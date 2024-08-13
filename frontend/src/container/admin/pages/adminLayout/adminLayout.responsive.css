@@ -1,0 +1,40 @@
+@media (max-width: 1249px) {}
+
+@media (max-width: 1023px) {}
+
+@media (max-width: 767px) {
+      .admin-dashboard-left-main.admin-sidebar-deactive {
+            left: -290px;
+            max-width: 0px;
+      }
+
+      .admin-header-main.admin-header-deactive {
+            left: 0;
+      }
+
+      .admin-header-main {
+            left: 0px;
+      }
+
+      .admin-sidebar-deactive .admin-sidebar-icons {
+            margin-right: 10px;
+      }
+
+      .admin-sidebar-deactive .admin-sidebar-link-text {
+            display: block;
+      }
+
+      .admin-dashboard-left-main.active {
+            left: 0;
+      }
+
+      .admin-dashboard-containt-main,
+      .admin-header-main.admin-header-deactive+.admin-dashboard-containt-main {
+            padding: 88px 15px 24px 15px;
+      }
+
+}
+
+@media (max-width: 549px) {}
+
+@media (max-width: 374px) {}

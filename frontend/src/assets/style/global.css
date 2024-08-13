@@ -1,0 +1,2204 @@
+* {
+      box-sizing: border-box;
+      padding: 0px;
+      margin: 0px;
+}
+
+html {
+      scroll-behavior: smooth;
+      scroll-padding-block-start: 30px;
+}
+
+body {
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 400;
+      font-family: "Poppins", sans-serif;
+      color: var(--main-black);
+      background-color: var(--body-color);
+}
+
+
+@font-face {
+      font-family: 'Poppins';
+      src: url('../fonts/Poppins/Poppins-Thin.ttf') format('truetype');
+      font-weight: 100;
+      font-style: normal;
+      font-display: swap;
+}
+
+@font-face {
+      font-family: 'Poppins';
+      src: url('../fonts/Poppins/Poppins-ExtraLight.ttf') format('truetype');
+      font-weight: 200;
+      font-style: normal;
+      font-display: swap;
+}
+
+@font-face {
+      font-family: 'Poppins';
+      src: url('../fonts/Poppins/Poppins-Light.ttf') format('truetype');
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+}
+
+@font-face {
+      font-family: 'Poppins';
+      src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+}
+
+@font-face {
+      font-family: 'Poppins';
+      src: url('../fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+}
+
+@font-face {
+      font-family: 'Poppins';
+      src: url('../fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+}
+
+@font-face {
+      font-family: 'Poppins';
+      src: url('../fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+}
+
+@font-face {
+      font-family: 'Poppins';
+      src: url('../fonts/Poppins/Poppins-ExtraBold.ttf') format('truetype');
+      font-weight: 800;
+      font-style: normal;
+      font-display: swap;
+}
+
+@font-face {
+      font-family: 'Poppins';
+      src: url('../fonts/Poppins/Poppins-Black.ttf') format('truetype');
+      font-weight: 900;
+      font-style: normal;
+      font-display: swap;
+}
+
+:root {
+      --main-white: #fff;
+      --primary-color: #111827;
+      --secondary-color: #6B7280;
+      --selected-color: #1B698E;
+      --main-border: #d1d5db85;
+      --light-border: #d1d5db1f;
+      --main-black: #000;
+      --main-red: #FF0000;
+      --bg-color: #114A65;
+      --body-color: #f4f5f7;
+      --off-white: #ffffff91;
+      --dark-pink: #8c116d;
+      --orange: #c85803;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+      -webkit-transition-delay: 9999s;
+      transition-delay: 9999s;
+}
+
+input[type="number"] {
+      -moz-appearance: textfield;
+}
+
+.cus-scrollbar::-webkit-scrollbar {
+      width: 3px;
+      height: 5px;
+      background-color: #ebebeb;
+      border-radius: 100rem;
+}
+
+.cus-scrollbar::-webkit-scrollbar-thumb {
+      background: #27447C;
+      border-radius: 100rem;
+}
+
+.cus-scrollbar {
+      scrollbar-color: #27447C #ebebeb;
+      scrollbar-width: thin;
+}
+
+.grid-main .grid-item {
+      background-color: transparent;
+      box-shadow: none;
+      border-radius: 0px;
+      padding: 0px;
+}
+
+.admin-text-decoration-none {
+      text-decoration: none !important;
+}
+
+.admin-flex-all {
+      display: flex;
+      justify-content: space-between;
+}
+
+.main-page-box {
+      width: 100%;
+}
+
+.object-fit-contain {
+      object-fit: contain !important;
+}
+
+/* start input field design css */
+
+.admin-form-group .admin-form-control input {
+      border: 1px solid var(--main-border);
+      border-radius: 4px;
+      width: 100%;
+      padding: 7px 15px;
+      background-color: #fff;
+      color: var(--secondary-color);
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 400;
+}
+
+.admin-form-group .admin-form-control input::placeholder {
+      color: var(--secondary-color);
+      font-size: 12px;
+      line-height: 20px;
+      font-weight: 400;
+      opacity: 1;
+}
+
+.admin-form-group .admin-form-control .Mui-focused .MuiOutlinedInput-notchedOutline {
+      border-color: transparent;
+      border-width: 0px;
+}
+
+.admin-form-control fieldset {
+      border: 0px;
+}
+
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+      border-color: var(--main-border) !important;
+}
+
+.admin-form-control-textarea:focus-visible {
+      outline: none !important;
+}
+
+/* end input field design css */
+
+/* password field */
+
+.admin-input-box .admin-form-lable {
+      font-size: 12px;
+      line-height: 17px;
+      font-weight: 500;
+      margin: 0px 0px 6px;
+      color: var(--secondary-color);
+}
+
+.admin-input-box {
+      margin-bottom: 15px;
+}
+
+.admin-input-box .MuiInputBase-root {
+      width: 100%;
+}
+
+.admin-input-box .MuiInputBase-root fieldset:hover {
+      border-color: transparent;
+}
+
+.admin-form-group .admin-form-control-eye {
+      border: 1px solid var(--main-border);
+}
+
+.admin-input-box .admin-form-control-eye input {
+      border: 0px;
+}
+
+.admin-input-box .admin-form-control-eye input::placeholder {
+      color: var(--secondary-color);
+      font-size: 12px;
+      line-height: 20px;
+      font-weight: 400;
+      opacity: 1;
+}
+
+/* End password field */
+
+.admin-page-border {
+      border: 1px solid var(--main-border);
+      border-radius: 6px;
+      padding: 20px;
+}
+
+.btn-main .btn {
+      border-radius: 4px;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
+      padding: 10px 15px;
+      text-transform: capitalize;
+}
+
+.btn-main-primary .btn-primary,
+.btn-main-primary .btn-primary:hover {
+      border-radius: 4px;
+      color: var(--main-white);
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 400;
+      padding: 8px 10px;
+      text-transform: capitalize;
+      background-color: #0055ff !important;
+      background-image: linear-gradient( 167deg,  #0055ff 0%, #043873 100% ) !important;
+      gap: 4px;
+}
+
+.border-btn-main .border-btn {
+      border: 1px solid var(--main-border);
+      border-radius: 4px;
+      padding: 7px 10px;
+      font-size: 12px;
+      line-height: 16px;
+      color: var(--secondary-color);
+      font-weight: 400;
+      text-transform: capitalize;
+      background: #fff;
+}
+
+.admin-common-para {
+      font-size: 14px !important;
+      line-height: 21px !important;
+      font-weight: 400;
+}
+
+
+
+
+/* start switch css */
+
+.admin-switch-main {
+      margin-left: 20px;
+}
+
+.admin-switch-lable .MuiTypography-root {
+      font-size: 14px;
+      line-height: 21px;
+      color: var(--secondary-color);
+      font-weight: 400;
+}
+
+/* end switch css */
+
+
+
+
+/* start pagination css */
+
+.admin-pagination-main {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      border-top: 1px solid var(--main-border);
+      padding-top: 20px;
+}
+
+.admin-pagination-main .MuiPagination-ul {
+      margin-right: 20px;
+}
+
+.admin-pagination-main .MuiPaginationItem-root {
+      height: 32px;
+      min-width: 32px;
+      border-radius: 4px;
+      padding: 0px;
+      font-size: 12px;
+      line-height: 18px;
+      color: var(--secondary-color);
+      font-weight: 400;
+      margin: 0 4px;
+}
+
+.admin-pagination-main .MuiPaginationItem-root.Mui-selected:hover {
+      /* background-color: var(--selected-color); */
+      color: var(--main-white);
+      /* background-color: #0093E9 !important;
+      background-image: linear-gradient(167deg, #0093E9 0%, #80D0C7 100%) !important; */
+      background-color: #0055ff !important;
+      background-image: linear-gradient( 167deg,  #0055ff 0%, #043873 100% ) !important;
+}
+
+.admin-pagination-main .MuiPaginationItem-root.Mui-selected {
+      color: var(--main-white);
+      background-color: #0055ff !important;
+      background-image: linear-gradient( 167deg,  #0055ff 0%, #043873 100% ) !important;
+}
+
+/* end pagination css */
+
+
+
+/* start progrss bar css */
+
+.admin-progress-bar-main {
+      max-width: 470px;
+      width: 100%;
+      position: relative;
+}
+
+.admin-progress-bar-main .admin-progress-bar .MuiLinearProgress-bar {
+      border-radius: 8px;
+      background-color: var(--selected-color);
+}
+
+.admin-progress-bar-content {
+      margin-top: 30px;
+}
+
+.admin-progress-bar-content .admin-page-title {
+      font-size: 20px;
+      line-height: 30px;
+      color: var(--primary-color);
+      font-weight: 500;
+}
+
+.admin-progress-bar-text {
+      position: absolute;
+      right: -35px;
+      top: -5px;
+      font-size: 14px;
+      line-height: 21px;
+      color: var(--secondary-color);
+      font-weight: 500;
+}
+
+/* end progrss bar css */
+
+
+/* start error text css */
+
+.admin-error-text {
+      color: var(--main-red);
+      font-size: 12px;
+      line-height: 15px;
+      font-weight: 400;
+}
+
+/* end error text css */
+
+
+
+
+/* / start dropdown css / */
+
+.admin-dropdown-box .admin-form-control {
+      width: 100%;
+      position: relative;
+}
+
+.admin-dropdown-select .MuiSelect-select {
+      color: var(--secondary-color);
+      font-size: 12px;
+      line-height: 20px;
+      font-weight: 400;
+      display: flex;
+      padding: 5.6px 15px;
+      border-radius: 4px;
+      border: 1px solid var(--main-border);
+}
+
+.admin-grey-down {
+      position: absolute;
+      top: 17.92px;
+      right: 21.92px;
+      height: 10px;
+      width: 10px;
+      object-fit: contain;
+}
+
+.admin-dropdown-box .MuiMenu-list .admin-drop-menuitem {
+      color: var(--secondary-color);
+      font-size: 12px;
+      line-height: 20px;
+      font-weight: 400;
+}
+
+
+/* / end dropdown css / */
+
+
+.admin-row {
+      grid-gap: 30px;
+      display: grid;
+      gap: 30px;
+      grid-template-columns: repeat(3, 1fr);
+}
+
+/* start common modal css */
+.admin-modal .admin-modal-inner {
+      padding: 30px 15px;
+      width: calc(100% - 30px);
+      max-height: calc(100vh - 40px);
+      border: 1px solid var(--main-border);
+      border-radius: 10px;
+}
+
+.admin-modal-hgt-scroll {
+      max-height: calc(100vh - 194px);
+      overflow: auto;
+      padding: 0 5px 0px 0px;
+      margin-right: -5px;
+}
+
+.admin-modal-close-icon {
+      cursor: pointer;
+}
+
+.MuiBackdrop-root {
+      background-color: rgb(0 0 0 / 70%);
+}
+
+.admin-modal-footer {
+      padding: 15px 0px 0px;
+}
+
+.admin-modal-header .modal-close-btn {
+      padding: 0px;
+      min-width: 30px;
+      justify-content: flex-end;
+}
+
+/* end common modal css */
+
+
+
+/* start common table design  */
+
+.admin-table-data-flex {
+      display: flex;
+      align-items: center;
+      width: 100%;
+}
+
+.admin-table-data-btn-flex {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+}
+
+.admin-table-data-btn-flex .admin-table-data-btn {
+      min-width: 30px;
+      padding: 0px;
+      justify-content: center;
+}
+
+.admin-table-data-img {
+      margin-right: 15px;
+      height: 25px;
+      width: 25px;
+      object-fit: cover;
+      border-radius: 5px;
+}
+
+.admin-table-data-flex .admin-table-data-text {
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+      overflow: hidden;
+      font-size: 12px;
+      line-height: 18px;
+      color: var(--secondary-color);
+      font-weight: 400;
+}
+
+.page-table-main .table-container {
+      padding-bottom: 7px;
+      background-color: transparent;
+      box-shadow: none;
+      overflow: auto;
+      max-width: calc(100vw - 0px);
+}
+
+.page-table-main .table-th {
+      font-size: 14px;
+      line-height: 18px;
+      color: var(--primary-color);
+      font-weight: 600;
+      padding: 10px 10px 10px 10px;
+      border-bottom: 1px solid var(--main-border);
+      background-color: #2d54d91f;
+      white-space: nowrap;
+}
+
+.page-table-main .table-td {
+      font-size: 12px;
+      line-height: 15px;
+      color: var(--secondary-color);
+      font-weight: 400;
+      padding: 7px 10px 7px 10px;
+      border-bottom: 1px solid var(--main-border);
+      word-break: break-word;
+}
+
+.page-table-main .table-container::-webkit-scrollbar {
+      width: 2px;
+      height: 5px;
+}
+
+.page-table-main .table-container::-webkit-scrollbar-track {
+      background: var(--main-border);
+      border-radius: 5px;
+}
+
+.page-table-main .table-container::-webkit-scrollbar-thumb {
+      background: #8888885c;
+}
+
+.page-table-main .table-container::-webkit-scrollbar-thumb:hover {
+      background: #555;
+}
+
+/* end common table design  */
+
+.admin-icon {
+      height: 13px;
+      width: 13px;
+      object-fit: contain;
+}
+
+.card-border {
+      border-radius: 5px;
+      border: 1px solid var(--main-border);
+      padding: 20px;
+}
+
+.common-card {
+      -webkit-box-shadow: 0 5px 20px rgba(var(--light-gray-rgba), .03);
+      box-shadow: 0 5px 20px rgba(173, 181, 217, .03);
+      background-color: var(--main-white);
+      border: 1px solid var(--main-border);
+      border-radius: 10px;
+      padding: 15px;
+}
+
+.admin-body-overflow .MuiTooltip-tooltip {
+      box-shadow: 0 5px 20px rgba(173, 181, 217, .03);
+      background-color: var(--selected-color);
+      border-radius: 5px;
+      color: var(--main-white);
+      padding: 4px 8px;
+      font-size: 13px;
+      line-height: 25px;
+      font-weight: 500;
+}
+
+.admin-body-overflow .MuiTooltip-tooltip .MuiTooltip-arrow::before {
+      color: var(--selected-color);
+}
+
+.admin-userlist-inner-btn-flex {
+      display: flex;
+      gap: 10px;
+}
+
+.admin-search-box {
+      position: relative;
+}
+
+.admin-search-box .admin-form-control input::placeholder {
+      color: var(--secondary-color);
+      font-size: 12px;
+      line-height: 20px;
+      font-weight: 400;
+      opacity: 1;
+}
+
+.admin-search-grey-img {
+      position: absolute;
+      left: 13px;
+      top: 8px;
+      margin-right: 10px;
+}
+
+.admin-search-box .admin-form-group .admin-form-control input {
+      padding: 6.38px 35px;
+}
+
+.admin-user-list-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+}
+
+.admin-userlist-btn-flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+}
+
+/* end admin css */
+
+
+/* start user globle css */
+.container {
+      padding: 0px 50px 0px 50px;
+      width: 100%;
+      margin: auto;
+}
+
+.text-decoration-none {
+      text-decoration: none !important;
+}
+
+.flex-all {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+
+/* start input field design css */
+
+.form-group .form-control input {
+      border: 1px solid var(--main-border);
+      border-radius: 4px;
+      width: 100%;
+      padding: 10px 15px;
+      background-color: transparent;
+      color: var(--secondary-color);
+      font-size: 12px;
+      line-height: 20px;
+      font-weight: 400;
+}
+
+.form-group .form-control input::placeholder {
+      color: var(--secondary-color);
+      font-size: 12px;
+      line-height: 20px;
+      font-weight: 400;
+      opacity: 1;
+}
+
+.form-group .form-control .Mui-focused .MuiOutlinedInput-notchedOutline {
+      border-color: transparent;
+      border-width: 0px;
+}
+
+.form-control fieldset {
+      border: 1px solid var(--main-border);
+      border-radius: 2px;
+}
+
+.form-control-textarea:focus-visible {
+      outline: none !important;
+}
+
+/* end input field design css */
+
+.primary-btn-main .primary-btn,
+.primary-btn-main .primary-btn:hover {
+      background-color: var(--primary-color);
+      border-radius: 4px;
+      width: 100%;
+      max-width: 380px;
+      color: var(--main-white);
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 400;
+      padding: 10px 15px;
+      text-transform: capitalize;
+}
+
+.common-para {
+      font-size: 14px !important;
+      line-height: 21px !important;
+      font-weight: 400;
+}
+
+/* start switch css */
+
+.switch-main {
+      margin-left: 20px;
+}
+
+.switch-lable .MuiTypography-root {
+      font-size: 14px;
+      line-height: 21px;
+      color: var(--secondary-color);
+      font-weight: 400;
+}
+
+/* end switch css */
+
+
+
+
+/* start pagination css */
+
+.pagination-main {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 27px;
+}
+
+.pagination-main .MuiPagination-ul {
+      margin-right: 20px;
+}
+
+.pagination-main .MuiPaginationItem-root {
+      height: 20px;
+      min-width: 20px;
+      border-radius: 4px;
+      padding: 0px;
+      font-size: 12px;
+      line-height: 18px;
+      color: var(--secondary-color);
+      font-weight: 400;
+      margin: 0 4px;
+}
+
+.pagination-main .MuiPaginationItem-root.Mui-selected:hover {
+      background-color: var(--primary-color);
+      color: var(--main-white);
+}
+
+.pagination-main .MuiPaginationItem-root.Mui-selected {
+      background-color: var(--primary-color);
+      color: var(--main-white);
+}
+
+/* end pagination css */
+
+
+
+/* start progrss bar css */
+
+.progress-bar-main {
+      max-width: 470px;
+      width: 100%;
+      position: relative;
+}
+
+.progress-bar-main .progress-bar .MuiLinearProgress-bar {
+      border-radius: 8px;
+      background-color: var(--primary-color);
+}
+
+.progress-bar-content {
+      margin-top: 30px;
+}
+
+.progress-bar-content .admin-page-title {
+      font-size: 20px;
+      line-height: 30px;
+      color: #111827;
+      font-weight: 400;
+}
+
+.progress-bar-text {
+      position: absolute;
+      right: -35px;
+      top: -5px;
+      font-size: 14px;
+      line-height: 21px;
+      color: var(--secondary-color);
+      font-weight: 500;
+}
+
+/* end progrss bar css */
+
+
+/* start error text css */
+
+.error-text {
+      color: var(--main-red);
+      font-size: 12px;
+      line-height: 15px;
+      font-weight: 400;
+}
+
+/* end error text css */
+
+
+
+
+/* / start dropdown css / */
+
+.dropdown-box .form-control {
+      width: 100%;
+      position: relative;
+}
+
+.dropdown-select .MuiSelect-select {
+      color: var(--secondary-color);
+      font-size: 12px;
+      line-height: 20px;
+      font-weight: 400;
+      display: flex;
+      padding: 10px 15px;
+      border-radius: 4px;
+}
+
+.grey-down {
+      position: absolute;
+      top: 17.92px;
+      right: 21.92px;
+      height: 10px;
+      width: 10px;
+      object-fit: contain;
+}
+
+.dropdown-box .MuiMenu-list .drop-menuitem {
+      color: var(--secondary-color);
+      font-size: 12px;
+      line-height: 20px;
+      font-weight: 400;
+}
+
+/* / end dropdown css / */
+
+
+/* start common table title */
+
+
+.table-title-main .table-title-name {
+      color: var(--primary-color);
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 20px;
+}
+
+.table-title-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 5px;
+}
+
+.table-search-flex {
+      display: flex;
+}
+
+/* end common table title */
+
+
+/* start add user modal css */
+.admin-modal .admin-add-user-modal-inner-main {
+      max-width: 500px;
+}
+
+.admin-span-text {
+      color: #D1D5DB;
+      margin-left: 3px;
+}
+
+.admin-modal .admin-modal-title {
+      color: var(--primary-color);
+      font-size: 16px;
+      line-height: 21px;
+      font-weight: 500;
+}
+
+.admin-modal-user-btn-flex {
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 3px;
+}
+
+.admin-modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+}
+
+/* end add user modal css */
+
+
+
+/* start delete user modal css */
+
+.admin-user-circle-img {
+      width: 52px;
+      height: 52px;
+      object-fit: contain;
+      margin: auto;
+      display: flex;
+}
+
+.admin-modal .admin-delete-modal-inner-main {
+      max-width: 450px;
+}
+
+.admin-delete-modal-inner-main .admin-delete-modal-title {
+      color: var(--primary-color);
+      font-size: 28px;
+      line-height: 42px;
+      font-weight: 500;
+      text-align: center;
+      margin: 20px 0px 16px;
+}
+
+.admin-delete-modal-inner-main .admin-delete-modal-para {
+      color: var(--secondary-color);
+      text-align: center;
+      max-width: 304px;
+      width: 100%;
+      margin: auto;
+}
+
+.admin-delete-modal-btn-flex {
+      display: flex;
+      justify-content: center;
+      margin-top: 26px;
+}
+
+.admin-delete-modal-btn-flex .admin-modal-cancel-btn {
+      margin-right: 15px;
+}
+
+.admin-delete-modal-btn-flex .admin-modal-delete-btn,
+.admin-delete-modal-btn-flex .admin-modal-delete-btn:hover {
+      color: #FFFFFF;
+      background-color: #E4004D;
+}
+
+.MuiBackdrop-root-MuiModal-backdrop {
+      background-color: rgb(17 24 39 / 60%);
+}
+
+/* end delete user modal css */
+
+
+
+
+
+/* start filter css */
+
+.admin-filter-main {
+      position: relative;
+}
+
+.admin-filter-main .MuiDrawer-paper {
+      width: 100%;
+      min-width: 400px;
+      max-width: 400px;
+}
+
+.admin-filter-header {
+      background-color: #07415D;
+      display: flex;
+      justify-content: space-between;
+      padding: 16px 25px;
+      align-items: center;
+}
+
+.admin-filter-close-icon {
+      height: 21px;
+      width: 21px;
+      object-fit: contain;
+}
+
+.admin-filter-header .admin-filter-title {
+      font-size: 20px;
+      line-height: 30px;
+      color: #FFFFFF;
+      font-weight: 400;
+}
+
+.admin-filter-inner-main {
+      padding: 20px 25px;
+      background-color: #fff;
+}
+
+.admin-filter-btn-main {
+      display: flex;
+      justify-content: flex-end;
+}
+
+.admin-filter-btn-main .admin-filter-cancel-btn {
+      margin-right: 15px;
+}
+
+
+.admin-filter-footer {
+      border-top: 1px solid #D1D5DB;
+      padding: 15px;
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      left: 0px;
+      right: 0px;
+}
+
+.admin-filter-checkbox-main .admin-checkbox-lable {
+      margin-right: 20px;
+}
+
+/* end filter css */
+
+.admin-down-icon,
+.admin-plus-icon {
+      margin-right: 10px;
+}
+
+.admin-page-title-main .admin-page-title {
+      color: var(--primary-color);
+      font-size: 17px;
+      line-height: 24px;
+      font-weight: 600;
+}
+
+.chart-row-main {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-top: 15px;
+}
+
+.pie-chart-main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+}
+
+.chart-title-main .chart-title {
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 19px;
+      color: var(--bg-color);
+      margin-bottom: 10px;
+}
+
+.admin-sub-title-main .admin-sub-title {
+      color: var(--bg-color);
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: 600;
+      position: relative;
+}
+
+.admin-sub-title-main .admin-sub-title::after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 35px;
+      background-color: var(--bg-color);
+      left: 0px;
+      bottom: -2px;
+}
+
+.title-row-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 15px 0px;
+}
+
+
+.page-table-main .table-not-found-td {
+      padding: 0px;
+      border: 0px;
+}
+
+.data-not-found-main {
+      box-shadow: 0 5px 20px rgba(173, 181, 217, .03);
+      background-color: var(--main-white);
+      border: 1px solid var(--main-border);
+      border-radius: 5px;
+      padding: 9px;
+      width: 100%;
+      margin: 10px 0px 0px;
+}
+
+.data-not-found-main .data-not-found-text {
+      font-size: 12px;
+      line-height: 18px;
+      color: var(--primary-color);
+      font-weight: 500;
+      text-align: center;
+}
+
+
+
+
+/* start loader css */
+.loader-main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 255px);
+}
+
+.loader {
+      width: 50px;
+      height: 50px;
+      display: inline-block;
+      padding: 0px;
+      text-align: left;
+}
+
+.loader span {
+      position: absolute;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      background: var(--bg-color);
+      -webkit-animation: loader 1.5s linear infinite;
+      animation: loader 1.5s linear infinite;
+}
+
+.loader span:last-child {
+      animation-delay: -0.9s;
+      -webkit-animation-delay: -0.9s;
+}
+
+@keyframes loader {
+      0% {
+            transform: scale(0, 0);
+            opacity: 0.8;
+      }
+
+      100% {
+            transform: scale(1, 1);
+            opacity: 0;
+      }
+}
+
+@-webkit-keyframes loader {
+      0% {
+            -webkit-transform: scale(0, 0);
+            opacity: 0.8;
+      }
+
+      100% {
+            -webkit-transform: scale(1, 1);
+            opacity: 0;
+      }
+}
+
+/* end loader css */
+
+
+
+/* start select 2 css */
+.admin-select2-main {
+      width: 300px;
+}
+
+.admin-select2-main .select2-container--default .select2-selection--multiple {
+      background-color: transparent;
+      border: 1px solid var(--main-border);
+}
+
+.admin-select2-main .select2-container--default.select2-container--focus .select2-selection--multiple {
+      border: 1px solid var(--main-border);
+      background-color: transparent;
+}
+
+.admin-select2-main .select2-container .select2-search--inline .select2-search__field {
+      color: var(--secondary-color);
+      font-size: 12px;
+      line-height: 20px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+}
+
+.admin-select2-main .select2-container--default .select2-selection--multiple .select2-selection__rendered {
+      padding: 1px 5px 0px;
+}
+
+.admin-select2-main .select2-container--default .select2-selection--multiple .select2-selection__choice {
+      background-color: transparent;
+      border: 1px solid var(--main-border);
+      color: var(--secondary-color);
+      font-size: 12px;
+      line-height: 20px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+}
+
+/* end select 2 css */
+
+
+
+/* start accordian design  */
+
+
+.accordian-main .accordian-summary {
+      background-color: var(--light-gray);
+      min-height: 30px;
+}
+
+.accordian-main .accordian {
+      margin-bottom: 10px;
+      box-shadow: none;
+}
+
+.accordian-main .accordian-details {
+      font-size: 12px;
+      line-height: 18px;
+      color: var(--secondary-color);
+      font-weight: 400;
+      border: 1px solid var(--main-border);
+}
+
+.accordian-main .MuiAccordion-root::before {
+      background-color: transparent;
+}
+
+.accordian-main .MuiAccordionSummary-content.Mui-expanded {
+      margin: 5px 0px;
+}
+
+.accordian-main .MuiAccordionSummary-content {
+      font-size: 12px;
+      line-height: 18px;
+      color: var(--primary-color);
+      font-weight: 500;
+      margin: 5px 0px;
+}
+
+.accordian-main .accordian:last-child {
+      margin-bottom: 0px;
+}
+
+.accordian-main .accordian.Mui-expanded {
+      margin: 10px 0;
+}
+
+.accordian-main .accordian-summary.Mui-expanded {
+      min-height: 30px;
+      padding: 5px 16px;
+}
+
+
+
+/* end accordian design */
+
+img[alt] {
+      font-size: 10px;
+}
+
+.page-title {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+}
+
+.bg-gradient-primary {
+      background-color: #0055ff !important;
+      background-image: linear-gradient( 167deg,  #0055ff 0%, #043873 100% ) !important;
+}
+
+.page-title {
+      /* background: -webkit-linear-gradient(167deg, #0093E9 0%, #0093E9 100%); */
+      background: -webkit-linear-gradient( 167deg,  #0055ff 0%, #043873 100% );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+      font-size: 22px;
+}
+
+.page-title .page-title-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 4px;
+      text-align: center;
+      -webkit-box-shadow: 0px 3px 8.3px 0.7px rgba(163, 93, 255, 0.35);
+      box-shadow: 0px 3px 8.3px 0.7px rgba(163, 93, 255, 0.35);
+}
+
+.page-title .page-title-icon svg {
+      fill: white;
+}
+
+.tab-cont-box {
+      padding: 16px;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.tab-cont-box button {
+      padding: 4px 16px;
+      font-weight: bold;
+}
+
+.tab-cont-box button.Mui-selected {
+      color: #fff;
+}
+
+.admin-table-data-btn img {
+      width: 20px;
+      height: 16px;
+}
+
+.page-header-box {
+      display: flex;
+      justify-content: space-between;
+}
+
+.list-style-1>li {
+      border-bottom: 1px dashed #e6e6e6;
+      padding: .5rem 0;
+      display: flex;
+      align-items: start;
+}
+
+.custom-label-title {
+      min-width: 160px;
+      display: inline-block;
+      color: #000;
+      font-size: 14px;
+      font-weight: bold;
+}
+
+.custom-label-subtitle {
+      display: inline-block;
+      color: #6B7280;
+      font-size: 14px;
+}
+
+.img-cont-box {
+      margin-top: 16px;
+}
+
+.img-detail-box {
+      width: 140px;
+      height: 140px;
+      border-radius: 8px;
+      border: 1px solid #d9d9d9;
+      margin-top: 8px;
+      cursor: pointer;
+}
+
+.img-detail-box-custoStore {
+      width: 100%;
+      height: 180px;
+      border-radius: 8px;
+      border: 1px solid #d9d9d9;
+      margin-top: 8px;
+}
+
+.img-detail-box img,
+.img-detail-box-custoStore img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+}
+
+.table-td.icon-box-img img {
+      height: 46px;
+      width: 46px;
+      border-radius: 8px;
+      border: 1px solid #d9d9d9;
+      object-fit: cover;
+}
+
+.user-form-lable.text-black {
+      color: #111;
+      font-size: 14px;
+      font-weight: 600;
+}
+
+.user-form-group .user-form-control.text-black input,
+.user-form-group textarea.user-form-control {
+      color: #111;
+      background-color: #f4f5f7 !important;
+}
+
+.user-form-group .user-form-control.text-black.color-box input {
+      width: 26px !important;
+      height: 26px !important;
+      padding: 6px 8px;
+}
+
+.user-form-group textarea:focus,
+.user-form-group textarea:focus-visible {
+      border: 0 !important;
+      outline: 0 !important;
+}
+
+.author-profile .card-body {
+      padding: 0;
+}
+
+.author-profile {
+      text-align: center;
+}
+
+.author-profile .author-media {
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+      display: inline-block;
+}
+
+.author-profile .author-media img {
+      width: 130px;
+      height: 130px;
+      border-radius: 100%;
+}
+
+.author-profile .upload-link {
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      line-height: 32px;
+      background-color: #0093E9 !important;
+      background-image: linear-gradient(167deg, #0093E9 0%, #80D0C7 100%) !important;
+      bottom: 0;
+      right: 0px;
+      box-shadow: 0 0 10px 0 rgba(0, 24, 128, 0.1);
+      border-radius: 100%;
+      color: #fff;
+      overflow: hidden;
+      border: 2px solid #fff;
+}
+
+.author-profile .upload-link .update-flie {
+      position: absolute;
+      opacity: 0;
+      z-index: 0;
+      width: 100%;
+      cursor: pointer;
+      left: 0;
+      height: 100%;
+}
+
+.author-profile .upload-link svg {
+      width: 16px;
+      height: 16px;
+}
+
+.btn-box-cont {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+}
+
+/* .no-break-row .table-td {
+      word-break: normal;
+} */
+
+.down-arrow {
+      width: 100%;
+      display: flex;
+      justify-content: end;
+}
+
+.tab-text-color button {
+      color: #fff;
+}
+
+.user-form-group .ck.ck-editor__main>.ck-editor__editable:not(.ck-focused),
+.user-form-group .ck-rounded-corners .ck.ck-editor__main>.ck-editor__editable,
+.ck.ck-editor__main>.ck-editor__editable.ck-rounded-corners,
+.user-form-group .ck-blurred.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline {
+      height: 260px;
+      font-size: 14px;
+}
+
+.back-btn-box button {
+      min-width: auto;
+      padding: 6px;
+      border-radius: 6px;
+}
+
+.back-btn-box button svg {
+      fill: white;
+}
+
+.back-btn {
+      border-radius: 4px;
+      color: #fff;
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 400;
+      /* background-color: #0093E9 !important;
+      background-image: linear-gradient(167deg, #0093E9 0%, #80D0C7 100%) !important; */
+      background-color: #0055ff !important;
+      background-image: linear-gradient( 167deg,  #0055ff 0%, #043873 100% ) !important;
+}
+
+.user-auth-main.main-bg-user {
+      display: flex;
+      flex-direction: column;
+      gap: 56px;
+      align-items: center;
+      justify-content: center;
+}
+
+.main-page-logo {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 36px;
+}
+
+.main-page-logo img {
+      width: 180px;
+      border-radius: 14px;
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      bottom: -20px;
+}
+
+::-ms-input-placeholder {
+      /* Edge 12-18 */
+      color: #6B7280;
+}
+
+::placeholder {
+      color: #6B7280;
+}
+
+.tab-cont-box.reset-pwd-box input {
+      background-color: #f4f5f7 !important
+}
+
+.tab-cont-box.reset-pwd-box .user-login-btn-main {
+      margin-top: 0px;
+}
+
+
+.profile-menu a li {
+      font-size: 14px !important;
+      color: #6B7280 !important;
+}
+
+.profile-box-detail {
+      text-decoration: none !important;
+}
+
+.profile-box-detail li {
+      font-size: 14px !important;
+      color: #6B7280;
+}
+
+.profile-box-detail li .MuiListItemIcon-root.css-cveggr-MuiListItemIcon-root {
+      min-width: 30px;
+}
+
+p.MuiFormHelperText-root.Mui-error.MuiFormHelperText-sizeMedium.MuiFormHelperText-contained {
+      margin: 0 2px;
+}
+
+.front-photo.front-photo-box {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+}
+
+.front-photo.front-photo-box .img-detail-box-custoStore {
+      height: 196px;
+      padding: 16px;
+}
+
+.tab-cont-box.tab-cont-box-rm {
+      padding: 0;
+}
+
+.tab-cont-box.tab-cont-box-rm .tab-cont-box {
+      background-color: transparent;
+      box-shadow: none;
+}
+
+/* Modal CSS */
+.modal .modal-title {
+      color: #111827;
+      font-size: 20px;
+      line-height: 30px;
+      font-family: "Poppins-Medium";
+}
+
+.modal-user-btn-flex {
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 3px;
+}
+
+.modal .add-user-modal-inner-main {
+      padding: 24px 24px 30px 24px;
+      max-width: 500px;
+      width: 100%;
+      border: 1px solid #707070;
+      border-radius: 10px;
+}
+
+.modal .modal-inner-main {
+      max-height: calc(100% - 100px);
+      overflow: auto;
+      padding: 20px;
+      box-shadow: rgba(0, 0, 0, 0.06) 0px 3px 3px -2px, rgba(0, 0, 0, 0.04) 0px 3px 4px 0px, rgba(0, 0, 0, 0.04) 0px 1px 8px 0px;
+      background-color: #fff;
+      border-radius: 10px;
+}
+
+.modal-input-box {
+      margin-bottom: 24px;
+}
+
+.modal-input-box .form-group .form-control input {
+      padding: 5.5px 15px;
+}
+
+.modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+}
+
+.modal-circle-main {
+      width: 100%;
+      display: flex;
+      justify-content: end;
+      padding: 10px 10px 10px 10px;
+}
+
+.modal-contained-wrap {
+      padding: 10px 24px 30px 24px;
+      text-align: center;
+}
+
+.modal-delete .delete-modal-inner-main {
+      max-width: 400px;
+      width: 100%;
+      border: 1px solid #707070;
+      border-radius: 10px;
+      max-height: 85vh;
+      overflow: auto;
+}
+
+.trash-icon-box {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      margin: 0 auto;
+      margin: 16px 0px;
+}
+
+.trash-icon-box img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+}
+
+.delete-modal-para.common-para {
+      font-weight: bold !important;
+      margin-bottom: 26px !important;
+}
+
+.admin-adduser-btn-main.delete-modal-btn {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+}
+
+.admin-adduser-btn.btn-primary.delete-cancel {
+      background-color: #0093E9 !important;
+      background-image: linear-gradient(167deg, #e900b7 0%, #ad5c80 100%) !important;
+}
+
+.column-two {
+      column-count: 2;
+}
+
+
+/* QR Code Design Page */
+
+.qr-code-box {
+      /* width: 100vw;
+      height: 100vh;
+      background-image: url(../images/png/background-QR.png);
+      background-position: 50% 10%;
+      background-repeat: no-repeat;
+      background-size: cover; */
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: #DFDBE5;
+      background-image: url(../images/png/background-QR.jpg);
+      background-repeat: no-repeat;
+      /* background-size: cover; */
+      background-size: 100% 100%;
+      padding: 16px;
+}
+
+
+
+.qr-code-box .qr-code-cont-box {
+      /* width: 28%; */
+      margin: auto;
+      background: #fff;
+      position: center;
+      align-self: center;
+      /* top: 50rem; */
+      border-radius: 6px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      display: flex;
+      flex-direction: row;
+      padding: 8px 60px;
+      background-size: 100% 100%;
+      background-image: url(../images/png/bgQR.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+}
+
+.qr-code-cont-box .qr-icon {
+      width: 100%;
+      height: 300px;
+}
+
+.qr-code-cont-box .qr-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+}
+
+.qr-box-details .qr-title {
+      font-size: 12px;
+      font-weight: bold;
+      color: #000;
+      line-height: 1.4;
+      text-align: center;
+}
+
+.qr-box-details {
+      /* border-bottom: 1px dashed #e6e6e6; */
+      margin-bottom: 8px;
+}
+
+.qr-box-details .qr-subtitle {
+      font-size: 12px;
+      font-weight: 500;
+      color: #818181;
+      line-height: 1.4;
+      text-align: center;
+}
+
+
+/* Second Design */
+/* .qr-code-box .qr-code-cont-box.qr-two-box {
+      width: 30%;
+} */
+
+.qr-code-box .qr-code-cont-box.qr-two-box.demo-left-right {
+      /* width: 70%; */
+      /* background-image: url(../images/png/crypto-bg.jpg) !important; */
+      /* background-position: center !important; */
+      background-size: cover;
+      background-image: url(../images/png/crypto-bg.jpg);
+      background-position: center;
+}
+
+.qr-code-box .qr-code-cont-box.qr-two-box .qr-icon {
+      width: 260px;
+      height: 260px;
+      margin: 0 auto;
+      /* background: #1472b1; */
+      padding: 10px;
+      border-radius: 6px;
+      border-width: 4px;
+      border-style: solid;
+      border-image: linear-gradient(to right, #17304e, #0f8e89) 1;
+}
+
+.qr-code-box .qr-code-cont-box.qr-two-box .qr-icon svg {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+}
+
+/* Three Design */
+.qr-code-box .qr-code-cont-box.qr-three-box {
+      width: 30%;
+}
+
+.qr-code-box .qr-code-cont-box.qr-three-box .qr-icon {
+      width: max-content;
+      height: 160px;
+      margin: 0 auto;
+      border-image: linear-gradient(#0093E9, #80D0C7) 30;
+      border-width: 6px;
+      border-style: solid;
+}
+
+
+.store-icon {
+      width: max-content;
+      height: 56px;
+      border-radius: 50%;
+      margin: 16px auto;
+}
+
+.store-icon img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+}
+
+.qr-descrip {
+      /* background: #fff9f3; */
+      /* padding: 16px; */
+      border-radius: 8px;
+      column-count: 1;
+      margin-bottom: 8px;
+}
+
+
+.qr-descrip .qr-box-details {
+      border-bottom: 0px;
+      display: flex;
+      justify-content: center;
+}
+
+/* .qr-descrip .qr-box-details .qr-subtitle {
+      margin-left: 4px;
+} */
+
+
+.Mui-checked+.MuiSwitch-track {
+      background-color: #0093E9 !important;
+      background-image: linear-gradient(167deg, #0093E9 0%, #80D0C7 100%) !important;
+}
+
+.Mui-checked {
+      color: #0093E9 !important;
+}
+
+.user-form-group .MuiFormControl-root.MuiTextField-root {
+      width: 100%;
+}
+
+
+.MuiInputBase-root.MuiInput-root.MuiInput-underline.MuiInputBase-colorPrimary.MuiInputBase-formControl.MuiInputBase-adornedStart.css-i4a1ir-MuiInputBase-root-MuiInput-root::before {
+      border: 0;
+}
+
+.user-form-control.text-black.country-btn {
+      background-color: #f4f5f7 !important;
+}
+
+.user-form-control.text-black.country-btn button {
+      padding: 0;
+      margin-left: 8px;
+}
+
+.user-input-box.bg-rm-colorBox .MuiInputBase-root {
+      background-color: transparent;
+      width: max-content;
+      margin: 0 auto;
+}
+
+.qr-subtitle.lg-font {
+      font-size: 24px;
+      color: #c9c9c9;
+      color: #f1047b;
+      font-weight: bold;
+}
+
+.qr-subtitle.sm-font {
+      font-size: 14px;
+      color: #0093E9;
+      font-weight: bold;
+}
+
+.right-side-cont {
+      flex: 50%;
+      /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://images.wallpaperscraft.com/image/single/lake_forest_snow_130421_1280x720.jpg'); */
+      background-size: cover;
+      text-align: center;
+      color: white;
+      /* height: 100%; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* background-image: url(../images/png/crypto-bg.jpg);
+      background-position: center; */
+}
+
+.left-side-cont {
+      flex: 50%;
+      /* background-color: white; */
+}
+
+.qr-code-cont-box .right-side-icon {
+      background-color: #f3f3f3;
+      padding: 16px;
+      border-radius: 8px;
+}
+
+.amount-cont-box {
+      display: flex;
+      margin-bottom: 16px;
+}
+
+.qr-code {
+      width: 86px;
+      height: 86px;
+      border-radius: 8px;
+      background-color: #fff;
+      padding: 8px;
+}
+
+.qr-code img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 8px;
+      background-color: #fff;
+}
+
+.right-side-icon a.navbar-brand.brand-logo {
+      margin-bottom: 16px;
+      margin-right: 0;
+      /* border-bottom: 1px dotted #07415D; */
+}
+
+.right-side-icon a.navbar-brand.brand-logo img {
+      width: 320px;
+}
+
+.amt-title {
+      font-size: 18px;
+      color: #c9c9c9;
+      color: #1e9b4b;
+      font-weight: bold;
+}
+
+.amt-subtitle {
+      font-size: 12px !important;
+      font-weight: bold !important;
+      color: #9b9b9b;
+}
+
+/* New Code Design */
+.qr-code-box.qr-code-wrapper {
+      background-image: url(../images/png/background-QR.jpg);
+}
+
+.qr-code-box.qr-code-wrapper .qr-code-cont-box {
+      width: 60%;
+}
+
+.qr-code-box.qr-code-wrapper .qr-code-box .qr-code-cont-box.w-100 {
+      width: 70%;
+      max-width: 70%;
+
+}
+
+.qr-descrip.two-column {
+      column-count: 2;
+}
+
+.qr-descrip.two-column .qr-box-details {
+      justify-content: start;
+}
+
+.qr-code.web-img {
+      width: 260px;
+      height: 260px;
+}
+
+.qr-code.web-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+}
+
+.qr-descrip.two-column .qr-box-details .qr-title {
+      font-size: 18px;
+}
+
+.qr-descrip.two-column .qr-box-details .qr-subtitle {
+      font-size: 18px;
+}
+
+.qr-subtitle.xlg-font {
+      font-size: 30px;
+      color: #f1047b;
+      font-weight: bold;
+}
+
+.date-subtitle {
+      font-size: 18px !important;
+      font-weight: bold !important;
+      color: #9b9b9b;
+}
+
+.qr-subtitle.sm-font {
+      font-size: 16px;
+      color: #0093E9;
+      font-weight: bold;
+}
+
+
+
+
+.qr-img-box {
+      position: relative;
+}
+
+.google-icon {
+      position: absolute;
+      width: 56px;
+      height: 56px;
+      background-color: #fff;
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 2px solid #fff;
+}
+
+
+.google-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 50%;
+}
+
+.store-icon.store-icon-box {
+      height: 66px;
+      width: 100px;
+      border-radius: 8px;
+}
+
+.store-icon.store-icon-box img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      border-radius: 8px;
+}
+
+
+.qr-subtitle.page-title.price-title-lg {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 0px;
+      line-height: normal;
+}
+
+.bg-price {
+      height: 56px;
+      border: 1px solid #d9d9d9;
+      max-width: max-content;
+      margin: 0 auto;
+      padding: 0px 26px;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid #d9d9d9 !important;
+      background: #fff;
+}
+
+.lg-store-title .qr-subtitle {
+      font-size: 22px;
+      color: #000;
+      font-weight: 700;
+}
+
+.qr-email-id .qr-subtitle {
+      font-size: 16px;
+      font-weight: bold;
+      color: #0093E9;
+}
+
+.qr-address .qr-subtitle {
+      font-size: 14px;
+      font-weight: bold;
+      color: #10918c;
+}
+
+.page-title.user-title {
+      font-size: 16px;
+}
+
+.page-title.user-title.mb-0 {
+      margin-bottom: 0px;
+      font-weight: bold;
+}
+
+.back-btn.close-btn-modal {
+      height: 26px;
+      width: 26px;
+      border-radius: 50%;
+}
+
+.back-btn-box .back-btn.close-btn-modal svg {
+      font-size: 16px;
+}
+
+:focus-visible {
+      outline: 0px !important;
+}
+
+.img-modal-view {
+      width: 100%;
+      object-fit: contain;
+      height: 520px;
+      padding: 16px;
+      border: 1px solid #d9d9d9;
+      border-radius: 8px;
+      margin-top: 8px;
+}
+
+.image-view-modal {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      max-height: 100vh;
+      background-color: #fff;
+      border: none;
+      box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+      padding: 16px;
+}
+
+.paid-box {
+      position: absolute;
+      height: 300px;
+      width: 300px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+}

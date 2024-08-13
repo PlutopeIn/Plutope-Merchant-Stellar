@@ -1,0 +1,108 @@
+/* start admin dashboard page */
+
+.admin-dashboard-inner-box {
+      max-width: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+}
+
+.admin-dashboard-inner-box .admin-dash-text {
+      color: var(--secondary-color);
+      font-size: 12px;
+      line-height: 18px;
+      font-weight: 500;
+      margin-bottom: 5px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+}
+
+.admin-dashboard-inner-box .admin-dash-price {
+      color: var(--primary-color);
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 500;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+}
+
+.admin-dash-icons {
+      height: 15px;
+      width: 15px;
+      object-fit: contain;
+  }
+.admin-dash-card-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 15px;
+}
+
+.admin-paid-lable-dots {
+      background-color: #04AB47;
+}
+
+.admin-paid-lable {
+      color: #04AB47;
+}
+
+.admin-table-lable-dots {
+      height: 7px;
+      width: 7px;
+      border-radius: 50%;
+      margin-right: 4px;
+}
+
+.admin-table-lable-flex {
+      display: flex;
+      align-items: center;
+}
+
+.admin-failed-lable-dots {
+      background-color: #E4004D;
+}
+
+.admin-failed-lable {
+      color: #E4004D;
+}
+
+.admin-pending-lable-dots {
+      background-color: #f39c12;
+}
+
+.admin-pending-lable {
+      color: #f39c12;
+}
+.admin-dash-icon-box {
+      background-color: #f4f5f7;
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .admin-dash-left {
+      padding-left: 5px;
+  }
+  .admin-dashboard-box {
+      position: relative;
+  }
+  .admin-dashboard-box::after{
+      background-color: #0055FF;
+      border-radius: 10px 0 0 10px;
+      content: "";
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 6px;
+  }
+/* end admin dashboard page */
